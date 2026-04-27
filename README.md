@@ -4,8 +4,6 @@ Aurora is an ambient weather dashboard.
 
 It pulls live conditions for your location, picks a cinematic sky photo to match the current weather and time of day, and has an LLM write a 50-70 word literary paragraph about what's happening outside. Glass panels float over the photo. Live data, refreshed every 30 minutes.
 
-It's project 2 of 4 in my portfolio refresh.
-
 **Live:** [aurora.angelrod.dev](https://aurora.angelrod.dev)
 
 ![Aurora](./public/scenes/og.png)
