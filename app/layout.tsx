@@ -18,9 +18,9 @@ const fraunces = Fraunces({
   subsets: ["latin"],
 });
 
-const TITLE = "Aurora — ambient weather, composed";
+const TITLE = "Aurora: a glass weather dashboard with literary AI narration";
 const DESCRIPTION =
-  "Your sky, today, as a composed scene. A glass dashboard that turns local weather into a feeling.";
+  "Aurora is a glass weather dashboard. It picks a cinematic sky photo for your conditions and has an AI write a literary paragraph about what's outside.";
 
 // Resolves to the custom domain in production (set SITE_URL on Vercel),
 // falls back to the Vercel auto-URL on previews, or localhost in dev.
