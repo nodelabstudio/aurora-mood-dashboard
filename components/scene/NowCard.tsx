@@ -1,5 +1,6 @@
 import { Drop, Sun, Wind } from "@phosphor-icons/react/dist/ssr";
 import GlassPanel from "./GlassPanel";
+import CityPicker from "./CityPicker";
 import type { Condition } from "@/lib/weather";
 
 type Props = {
@@ -33,16 +34,15 @@ export default function NowCard({
   return (
     <GlassPanel className="now-card" depth={3} index={0}>
       <header className="flex items-baseline justify-between gap-4">
-        <div>
+        <div className="min-w-0 flex-1">
           <p className="text-[0.65rem] uppercase tracking-[0.32em] text-white/45 font-mono">
             now
           </p>
-          <p className="mt-2 text-base font-medium text-white/85">
-            {city}
-            {country ? <span className="text-white/45">, {country}</span> : null}
-          </p>
+          <div className="mt-2">
+            <CityPicker city={city} country={country} />
+          </div>
         </div>
-        <p className="text-[0.65rem] uppercase tracking-[0.32em] text-white/45 font-mono">
+        <p className="text-[0.65rem] uppercase tracking-[0.32em] text-white/45 font-mono shrink-0">
           {formatLocalTime(timezoneOffset)}
         </p>
       </header>
@@ -68,7 +68,7 @@ export default function NowCard({
 
       <footer className="grid grid-cols-3 gap-2 mt-auto pt-4 border-t border-white/10">
         <Detail icon={<Drop size={14} weight="regular" strokeWidth={STROKE} />} label="humidity" value={`${humidity}%`} />
-        <Detail icon={<Wind size={14} weight="regular" strokeWidth={STROKE} />} label="wind" value={`${windSpeed.toFixed(1)} m/s`} />
+        <Detail icon={<Wind size={14} weight="regular" strokeWidth={STROKE} />} label="wind" value={`${windSpeed.toFixed(1)} mph`} />
         <Detail
           icon={<Sun size={14} weight="regular" strokeWidth={STROKE} />}
           label="sun"

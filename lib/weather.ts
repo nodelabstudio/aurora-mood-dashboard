@@ -110,7 +110,7 @@ export async function fetchWeather(lat: number, lon: number): Promise<WeatherSna
   const baseParams = new URLSearchParams({
     lat: lat.toString(),
     lon: lon.toString(),
-    units: "metric",
+    units: "imperial",
     appid,
   });
   const geoParams = new URLSearchParams({
