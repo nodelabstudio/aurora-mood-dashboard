@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", monospace;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+
+  /* Aurora base palette — set deliberately, not the Tailwind defaults */
+  --color-aurora-night: #08090d;
+  --color-aurora-haze: #f5f1ea;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-aurora-night);
+  color: var(--color-aurora-haze);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
