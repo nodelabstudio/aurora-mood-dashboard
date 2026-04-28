@@ -38,6 +38,9 @@ yarn-error.log*
 # personal marketing drafts (X posts, social copy). Not for the public repo.
 /marketing
 
+# personal notes and playbooks. Not for the public repo.
+/notes
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
